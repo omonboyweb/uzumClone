@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzum</title>
+    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="icon" href="../imgs/Uzum" type="imgs/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Noto+Sans+Anatolian+Hieroglyphs&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- this is clone website for practise learn frontend -->
+
+    <!-- start site nav top part -->
+    <nav id="nav">
+        <div class="container">
+            <div class="nav__top">
+
+                <div class="nav__top__left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path
+                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg>
+                    <div class="pleaces">
+                        <span>Shahar: <p>Toshkent</p></span>
+                        <div class="topshirish__punkiti">
+                            Topshirish punkitlari
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-top_middle">
+                    Buyurtmangizni bir kunda yetkazib beramiz!
+                </div>
+                <div class="nav__top__right">
+                    <span>Savol-javoblar</span>
+                    <span>Buyurtmalarim</span>
+                    <div class="flag">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#000" xmlns="http://www.w3.org/2000/svg"
+                            class="ui-icon ">
+                            <mask id="mask0_9302_12006" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                width="20" height="20">
+                                <path
+                                    d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z"
+                                    fill="#F4F5F5"></path>
+                            </mask>
+                            <g mask="url(#mask0_9302_12006)">
+                                <rect width="20" height="20" fill="#0099B5"></rect>
+                                <rect y="13" width="20" height="7" fill="#1EB53A"></rect>
+                                <rect y="13" width="20" height="1" fill="#CE1126"></rect>
+                                <rect y="6" width="20" height="1" fill="#CE1126"></rect>
+                                <rect y="6.5" width="20" height="7" fill="white"></rect>
+                            </g>
+                        </svg>
+                        <span>O'zbekcha</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- finish site nav top part -->
+    <!-- start site navbar part -->
+    <div class="container">
+        <!-- general class for navbar -->
+        <div class="navbar__content">
+            <!-- logo for web site -->
+            <div class="navbar-logo">
+                <img src="../imgs/download.svg" alt="Uzum logo">
+            </div>
+            <!-- katalog button for web site all products  -->
+            <div class="navbar__katalog">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px" fill="currentColor"
+                    class="bi bi-inbox" viewBox="0 0 16 16" color: blue;>
+                    <path
+                        d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
+                </svg>
+                <span>Katalog</span>
+            </div>
+            <!-- class for search products type=search  -->
+            <div class="navbar__search">
+
+                <input type="search" id="search" placeholder="Mahsulotlar va turkumlarni izlash">
+                <div class="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </div>
+            </div>
+            <!-- class for guest profil -->
+            <div class="guest__profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                </svg>
+                <span>Kirish</span>
+            </div>
+            <!-- this here have got your useful products for bascet -->
+            <div class="site__favorite__product">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-suit-heart" viewBox="0 0 16 16">
+                    <path
+                        d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                </svg>
+                <span>Saralangan</span>
+            </div>
+            <!-- you bauhgt products  -->
+            <div class="site__basket">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-bag-plus" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                    <path
+                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                </svg>
+                <span>Savat</span>
+            </div>
+        </div>
+    </div>
+    <!-- finish site navbar part -->
+    <!-- this is class for products types  start -->
+
+    <div class="container">
+        <div class="site__kategore">
+            <!-- halol nasiya img -->
+            <div class="halol__nasiya">
+                <img src="../imgs/halol-nasiya.png" alt="halol nasiya">
+                <span>Halol nasiya</span>
+            </div>
+            <!-- those all products category -->
+            <div class="product__types">
+                <ul>
+                    <li class="category">Electronika</li>
+                    <li class="category">Maishiy texnika</li>
+                    <li class="category">Kiyim</li>
+                    <li class="category">Poyavzallar</li>
+                    <li class="category">Acsessuarlar</li>
+                    <li class="category">Go'zallik</li>
+                    <li class="category">Salomatlik</li>
+                    <li class="category">Uy-ro'zg'or buyumlar</li>
+                    <li class="category site__none">Qurilish va amirlash</li>
+                    <li class="category site__none">Avtotavar</li>
+                    <div class="more-result">
+                        <!-- this is for more proctucts show all products -->
+                        <span>Yana</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- this is class for products types  finish -->
+    <!-- site banner start -->
+    <div class="site__banner">
+        <div class="container">
+
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../imgs/uzum-product.jpg" class="d-block w-100" alt="banner img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imgs/muka.jpg" class="d-block w-100" alt="banner img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imgs/dena.jpg" class="d-block w-100" alt="banner img">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- site banner finish-->
+    <!-- site main all products  full data start -->
+    <div class="main">
+        <div class="container">
+            <!-- product costs type -->
+            <div class="cost__type">
+                <span>Arzon narxlar</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </div>
+            <!-- product costs type finish-->
+            <div class="site__products">
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="../imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="../imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/idish-yuvush.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Idishlarni yuvish uchun suyuqlik Fairy, limon, 450 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (603 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 080 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">16 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>9 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Bolalar tagliklari Sleepy Natural Maxi 4, 7-14 kg, 30 dona</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+                <!-- site product's card -->
+                <div class="product__card">
+                    <div class="card-img">
+                        <img src="./imgs/oil.jpg" alt="">
+                    </div>
+                    <div class="about__product">
+                        <span>Kungaboqar yog'i Щедрое лето, tozalangan, 900 ml</span>
+                        <div class="baho">
+                            <img src="./imgs/five.svg" alt="star img">
+                            <span>5.0 (1651 baho)</span>
+                        </div>
+                        <div class="chegirma__narx">
+                            <mark> 1 680 so'm/oyiga
+                            </mark>
+                        </div>
+                        <div class="hozirgi__narxlar">
+                            <span class="chegirma">21 000 so'm</span>
+                            <div class="hozirgi__narx">
+                                <span>14 000 so'm</span>
+                                <div class="bag__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                        class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- site product's card finish-->
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- site main all products  full data finish -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+        <script src="../javascript.js"></script>
+</body>
+
+</html>
